@@ -1,0 +1,21 @@
+{
+  "name": "helius-transaction-analyzer",
+  "version": "1.0.3",
+  "type": "module",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": "Analyzes Helius parsed transactions, providing token transfers, fees, and Jito tip insights",
+  "dependencies": {
+    "@solana/web3.js": "^1.86.0",
+    "dotenv": "^16.4.5"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./*": "./*.js"
+  }
+}
