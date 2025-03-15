@@ -1,5 +1,5 @@
 declare module "helius-transaction-analyzer" {
-  export function getParsedHeliusTransaction(transaction: any): Promise<any>;
+  export function getParsedHeliusTransaction(transaction: string): Promise<any>;
   export function getSolanaRPCTransaction(
     transactionSignature: string
   ): Promise<any>;
