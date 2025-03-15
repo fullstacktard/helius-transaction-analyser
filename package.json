@@ -2,7 +2,7 @@
   "name": "helius-transaction-analyzer",
   "version": "1.0.4",
   "type": "module",
-  "main": "index.js",
+  "main": "./index.js",
   "author": "",
   "license": "ISC",
   "description": "Analyzes Helius parsed transactions, providing token transfers, fees, and Jito tip insights",
@@ -17,5 +17,6 @@
   "exports": {
     ".": "./index.js",
     "./*": "./*.js"
-  }
+  },
+  "types": "./index.d.ts"
 }
