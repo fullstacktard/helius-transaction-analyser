@@ -5,7 +5,7 @@ A package to analyze parsed Helius transactions including token transfers, fees,
 ## Installation
 
 ```bash
-npm install @your-username/solana-transaction-analyzer
+npm install solana-transaction-analyzer
 ```
 
 ## Usage
@@ -13,12 +13,14 @@ npm install @your-username/solana-transaction-analyzer
 ```javascript
 import {
   getParsedHeliusTransaction,
+  getSolanaRPCTransaction,
   analyseParsedTransaction,
-} from "@your-username/solana-transaction-analyzer";
+} from "solana-transaction-analyzer";
 
 // Example usage
-const transaction = await getParsedHeliusTransaction("txSignature");
-const analysis = await analyseParsedTransaction(transaction);
+const heliusTx = await getParsedHeliusTransaction("txSignature");
+const rpcTx = await getSolanaRPCTransaction("txSignature");
+const analysis = await analyseParsedTransaction(heliusTx);
 ```
 
 ## Configuration
@@ -29,6 +31,14 @@ Set these environment variables:
 - `SOLANA_RPC_URL`: Solana RPC endpoint URL
 
 ## API
+
+### `getParsedHeliusTransaction(transactionSignature: string)`
+
+Fetches parsed transaction data from Helius API
+
+### `getSolanaRPCTransaction(transactionSignature: string)`
+
+Retrieves raw transaction data directly from Solana RPC
 
 ### `analyseParsedTransaction(tx: Transaction): AnalysisResult`
 
@@ -43,4 +53,5 @@ Returns an object containing:
 ## License
 
 MIT
+
 # helius-transaction-analyser
