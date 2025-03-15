@@ -1,7 +1,4 @@
-import dotenv from "dotenv";
 import { Connection } from "@solana/web3.js";
-dotenv.config();
-
 export async function getParsedHeliusTransaction(transaction) {
   try {
     const url = `https://api.helius.xyz/v0/transactions/?api-key=${process.env.HELIUS_API_KEY}&commitment=confirmed`;

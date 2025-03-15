@@ -27,7 +27,7 @@ const analysis = await analyseParsedTransaction(heliusTx);
 
 Set these environment variables:
 
-- `HELIUS_API_KEY`: Your Helius API key
+- `HELIUS_API_KEY`: Your Helius API key (get one from [Helius pricing page](https://www.helius.dev/pricing) - free tier available)
 - `SOLANA_RPC_URL`: Solana RPC endpoint URL
 
 ## API
@@ -49,9 +49,3 @@ Returns an object containing:
 - Fee breakdown
 - Transaction type (BUY/SELL)
 - Price calculations
-
-## License
-
-MIT
-
-# helius-transaction-analyser
