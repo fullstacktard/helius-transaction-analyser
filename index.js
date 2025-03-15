@@ -1,4 +1,3 @@
-import fs from "fs";
 import dotenv from "dotenv";
 import { Connection } from "@solana/web3.js";
 dotenv.config();
